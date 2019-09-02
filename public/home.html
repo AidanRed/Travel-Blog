@@ -1,0 +1,110 @@
+<!--home_page-->
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Diary Home</title>
+  <link id="pagestyle" rel="stylesheet" href="css/home_stylesheet.css">
+  <script src="scripts/home_script.js" type="text/javascript"></script>
+  <!--load google maps api-->
+  <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBMbUAUz4RLNxNQsiZSFoHP-9bh3d6t-Ys&callback=initMap" type="text/javascript"></script>
+</head>
+
+<body>
+  <header>
+    <h1> Travel Diary </h1>
+  </header>
+  
+  <!--navigation bar-->
+  <nav>
+    <ul class="navi">
+      <li class="navi"><a href="./home.html">Home</a></li>
+      <li class="navi"><a href="./login.html">Login/Register</a></li>
+      <li class="navi"><a href="./friends.html">Friends</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Themes</a>
+        <div class="dropdown-content">
+          <a onclick="swapTheme(0)">Theme 1</a>
+          <a onclick="swapTheme(1)">Theme 2</a>
+          <a onclick="swapTheme(2)">Theme 3</a>
+        </div>
+      </li>
+      <li class="navi">search<input type="text" name="name"></li>
+    </ul>
+  </nav>
+  
+  <div class="centre">
+
+    <!--recent activity links-->
+    <div class="left_links">
+      <!--current diary entry slected by clicking location on map or 
+      by selected by date time
+      entries by locations drop menu-->
+      Recent diary entries by date<br>
+      <ul class="left">
+        <li> <a href="#blog1">03/01/16</a></li>
+        <li> <a href="#blog2">02/01/16</a></li>
+        <li> <a href="#blog3">01/01/16</a></li>
+      </ul>
+
+      Recent entries by location<br>
+      <ul class="left">
+        <li> <a href="#blog1">Adelaide Uni</a></li>
+        <li> <a href="#blog2">Rundle Mall</a></li>
+        <li> <a href="#blog3">Gouger St</a></li>
+      </ul>
+
+      Recent photos<br>
+      <ul class="photos">
+        <li><img src="images/picture1.jpg" alt="cannot show image" width="259" height="142"></li>
+        <li><img src="images/picture2.jpg" alt="cannot show image" width="259" height="142"></li>
+      </ul>
+    </div>
+    
+      <!--map with clickable locations-->
+    <div id="map"></div> 
+     
+    
+    <!--friends-->
+    <div class="right_friends">
+      
+      <button onclick="">Add Friend</button><br>
+      recent active friends
+      <ul>
+        <li><a href="">John</a></li>
+        <li><a href="">Jane</a></li>
+        <li><a href="">Matt</a></li>
+      </ul>
+      recent friend posts
+      <ul>
+        <li>3.01.16 post1</li>
+        <li>2.01.16 post2</li>
+        <li>1.01.16 post3</li>
+      </ul>  
+    </div>
+
+
+
+  </div>
+  
+  
+
+  <div class="post">
+    <h2>Posts by time</h2>
+    <ul class="bottom">
+      <h3 id="blog1">03/01/16 <a href=""> location link to map</a></h3>
+      <p>current selected blog entries text appears here by date maybe more than one entry per date</p>
+      <h3 id="blog2">02/01/16</h3>
+      <p>blog text</p>
+      <h3 id="blog3">01/01/16</h3>
+      <p>blog text</p>
+    </ul>
+  </div>
+  
+  
+  <footer>
+    
+    &copy; 2016 page designed by Aidan Redding and Vincent Chan.
+  </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+header, footer {
+    display: block;
+    position: relative;
+    margin: 0px;
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    color: white;
+    clear: left;
+}
+
+nav {
+    
+    background-color: grey;
+    margin: 0;
+    overflow: hidden;
+}
+
+nav ul.navi {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+nav ul.navi li.navi {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 40px;
+}
+
+nav>ul.navi>li.navi>a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+div.register {
+    position: relative;
+    text-align:left;
+    top:100px;
+    height: 580px;
+    width:185px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
